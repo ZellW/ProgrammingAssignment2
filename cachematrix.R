@@ -5,9 +5,7 @@
 # Tese functions  take advantage of the scoping rules of the R language and how they can be manipulated 
 # to preserve state inside of an R object.
 #
-# The following two functions are used to cache the mymatrixerse of a matrix.
-
-## Write a short comment describing this function 
+# The following two functions are used to cache the inverse of  mymatrix.
 
 makeCacheMatrix <- function(x = mymatrix()) {
      #intialize and store null cached value called mymatrix
