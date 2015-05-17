@@ -25,6 +25,7 @@ makeCacheMatrix <- function(x = mymatrix()) {
      # Return the value of mymatrix
      list(set=set, get=get, setmymatrix=setmymatrix, getmymatrix=getmymatrix)
      # I thank John Sebastian for his help on Get - Set. This was functionality that wwas new to me.
+     # John also provided assistance on mtrix math.  I have not done matrix math for 30 years.  Thanks John!
 }
 
 ## cacheSolve function computes the inverse of the special "matrix" returned by `makeCacheMatrix` above. 
