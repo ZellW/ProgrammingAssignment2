@@ -17,11 +17,10 @@ makeCacheMatrix <- function(x = mymatrix()) {
           # my mattrix is also set as a symbol (or variable) available outside the function
           mymatrix <<- NULL
      }
-     #get the value o fthe matrix
+     #get the value of the matrix
      get = function() x
      # Invert mymatrix
-     setmymatrix <- function(inverse) mymatrix <<- mymatrixerse
-     
+     setmymatrix <- function(inverse) mymatrix <<- mymatrixinverse
      getmymatrix <- function() mymatrix
      # Return the value of mymatrix
      list(set=set, get=get, setmymatrix=setmymatrix, getmymatrix=getmymatrix)
@@ -41,8 +40,8 @@ cacheSolve <- function(x, ...) {
           return(mymatrix) 
      } 
      # If cache is null, calcualte the inverse 
-     data <- x$get() 
-     mymatrix <- solve(data) 
+     matrixdata <- x$get() 
+     mymatrix <- solve(matrixdata) 
      x$setinv(mymatrix) 
      mymatrix 
 }
